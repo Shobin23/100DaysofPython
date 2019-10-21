@@ -1,1 +1,31 @@
+from datetime import date, time
+from datetime import datetime
 
+dtm_obj = datetime.now()
+print(dtm_obj)
+
+dtm_obj = datetime.today()
+print(dtm_obj)
+
+print(dir(datetime))
+
+d = date(2019,4,13)
+print(d)
+
+# importing timestamp from datetime.
+timestamp = date.fromtimestamp(1326244364)
+print('Date from timestamp is ', timestamp)
+
+a = time()
+print(a)
+b = time(11,34,56)
+print(b)
+c = time(hour = 5,minute = 23,second=58)
+print(c)
+# once the time object is created we can use it to print the individual componets
+print(c.hour)
+# a better way of time is datetime module which essentially is the same but also allows to use the date as well
+
+b = datetime(2017, 11, 28, 23, 55, 59, 342380)
+print(b)
+# I think need more time to fully understand the datetime module, I think this is enough for today.
